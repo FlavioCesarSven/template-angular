@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginasService } from '../../services/info-paginas.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,7 +10,7 @@ export class FooterComponent implements OnInit {
 
   anio: number = new Date().getFullYear();
 
-  constructor() { }
+  constructor(public infoPaginas: InfoPaginasService) { }
 
   ngOnInit(): void {
   }

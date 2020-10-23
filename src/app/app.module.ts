@@ -9,6 +9,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemsComponent } from './pages/items/items.component';
 
 import { FeatureRoutingModule } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FeatureRoutingModule } from './app.routes';
   ],
   imports: [
     BrowserModule,
-    FeatureRoutingModule
+    FeatureRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
